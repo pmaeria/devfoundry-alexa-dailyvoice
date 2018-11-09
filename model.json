@@ -1,0 +1,105 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "daily voice",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop playing",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TopicIntent",
+                    "slots": [
+                        {
+                            "name": "topic",
+                            "type": "topics"
+                        }
+                    ],
+                    "samples": [
+                        "{topic}",
+                        "latest {topic} podcast",
+                        "I want to listen to {topic}",
+                        "Play {topic}",
+                        "I like {topic}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "topics",
+                    "values": [
+                        {
+                            "id": "Entertainment",
+                            "name": {
+                                "value": "Entertainment"
+                            }
+                        },
+                        {
+                            "id": "Health",
+                            "name": {
+                                "value": "Health"
+                            }
+                        },
+                        {
+                            "id": "Lifestyle",
+                            "name": {
+                                "value": "Lifestyle",
+                                "synonyms": [
+                                    "Family",
+                                    "Kids",
+                                    "Kids and Family"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Sport",
+                            "name": {
+                                "value": "Sport",
+                                "synonyms": [
+                                    "Sports"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "News",
+                            "name": {
+                                "value": "News",
+                                "synonyms": [
+                                    "Breaking News"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Crime",
+                            "name": {
+                                "value": "Crime",
+                                "synonyms": [
+                                    "True Crime"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
